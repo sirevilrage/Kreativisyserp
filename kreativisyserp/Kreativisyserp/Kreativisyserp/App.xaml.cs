@@ -11,7 +11,8 @@
             InitializeComponent();
 
             //pagina inicial de la aplicacion
-            MainPage = new LoginPage();
+            //Navigation page sirve para poder apilar paginas en el futuro
+            this.MainPage = new NavigationPage(new LoginPage()) ;
         }
         #endregion
 
